@@ -1,0 +1,19 @@
+<head>
+</style>
+</head>
+<title>{{title}}</title>
+<link rel="shortcut icon" href="/static/logo.svg">
+<link rel="stylesheet" href="/static/style.css">
+<body>
+  <h1>{{title}}<br> Overview</h1>
+{% for key, v in body.items() %}
+<div class="container" width=80% height=80%>
+<h2>{{key}}</h2>
+{% for distinct in v %}
+<a href="/gallery?{{key}}={{distinct}}">{{distinct}}</a>
+{% endfor %}
+</div>
+<br>
+{% endfor %}
+
+</body>

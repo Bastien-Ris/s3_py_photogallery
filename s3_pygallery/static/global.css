@@ -1,0 +1,89 @@
+
+.bottombar {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: fit-content;
+  width: fit-content;
+  background-color: linen;
+  border: 1px solid ForestGreen;
+  border-radius: 20px;
+  padding: 20px;
+  color: ForestGreen;
+  a {
+    padding: 10px;
+    color: #282828;
+    font-size: 18px;
+  }
+}
+
+
+.container {
+  display: table;
+  background-color: linen;
+  width: 90%;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+div.form {
+  display: block;
+  background-color: linen;
+  font-size: 24px;
+  color: ForestGreen;
+  border: 1px solid ForestGreen;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 20px;
+  margin: auto;
+  padding: auto;
+  width: fit-content;
+  position: relative;
+  label {
+    color: ForestGreen;
+  }
+  table, th, tr {
+    color: ForestGreen;
+  }
+}
+
+div.pswp {
+  display: block;
+  font-size: 18px;
+  color: ForestGreen;
+  border: 1px solid ForestGreen;
+  text-align: center;
+  vertical-align: center;
+  margin: auto;
+  padding: auto;
+  width: fit-content;
+  position: relative;
+}
+a {
+  color: #282828;
+}
+h1 { 
+  background-color: linen;
+  border: 1px solid ForestGreen;
+  border-radius: 20px;
+  color: ForestGreen;
+  font-size: 32px;
+  text-align: center;
+}
+
+h2 { 
+  color: ForestGreen;
+  text-align: center;
+}
+h3 {
+  background-color: linen;
+  color: LimeGreen;
+}
+
+
+body {
+  background-image: url("/gallery/static/background.jpg");
+  color: #fff;
+}
