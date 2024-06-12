@@ -1,0 +1,18 @@
+[project]
+name = "s3-pygallery"
+version = "0.0.1"
+authors = [
+{name="Bastien Rissoan" mail="rissoan.bastien@gmail.com"}
+]
+description="A simple web gallery to display pictures from a S3-bucket."
+readme = "README.md"
+requires-python=">=3.11"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Linux"
+]
+
+[build-system]
+requires = ["setuptools>=69.5"]
+build-backend = ["setuptools"]
