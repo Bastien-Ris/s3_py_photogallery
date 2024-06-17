@@ -13,15 +13,19 @@
 {% for item in body %}
 <tr>
 {% for key, value in item.items() %}
-{% if key == "passwords" %}
+{% if key == "password" %}
 <th> <input name="{{key}}" id="{{key}}" type="password" value="{{value}}"></input></th>
 {% elif key == "admin" %}
-<th> <input name="{{key}}" id="{{key}}" type="checkbox" value="{{value}}"></input></th>
+{% if value %}
+<th> <input name="{{key}}" id="{{key}}" type="checkbox" checked></input></th>
 {% else %}
+<th> <input name="{{key}}" id="{{key}}" type="checkbox"></input></th>
+{% endif %}
+{% elif key == "name" %}
 <th> <input name="{{key}}" id="{{key}}" type="text" value="{{value}}"></input></th>
 {% endif %}
 {% endfor %}
-<th> <input type="submit" /></th>
+<th> <input value=submit type="submit" /></th>
 </tr>
 {% endfor %}
 <tr> Create new user </tr>
@@ -29,7 +33,7 @@
   <th> <input name="name" id="name" type="text"><label for="name"></label></input></th>
   <th> <input name="password" id="password" type="password"><label for="name"></label></input></th>
   <th> <input name="admin" id="admin" type="checkbox"><label for="admin"></label></input></th>
-  <th> <input type="submit" /></th>
+  <th> <input value="submit" type="submit" /></th>
   </tr>
 </table>
 <br>

@@ -6,9 +6,8 @@ from urllib.request import urlopen
 from os import path
 from PIL import Image as pil, ExifTags
 from geopy.geocoders import Nominatim
-
 from flask_sqlalchemy import SQLAlchemy
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 from s3_pygallery.s3 import gen_temporary_url
 from sqlalchemy import (Date, ForeignKey, Integer, String, Boolean, Time, create_engine,
                         select, column)
@@ -23,21 +22,31 @@ class Base(DeclarativeBase):
 db = SQLAlchemy(model_class=Base)
 
 
+@dataclass
 class User(db.Model):
     __tablename__ = "users"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str] = mapped_column(String(), unique=True, nullable=False)
+    password: Mapped[str] = mapped_column(String(), nullable=False)
+    admin: Mapped[bool] = mapped_column(
+        Boolean(), default=False, nullable=False)
 
     def __init__(self, name, password, admin=False):
         self.name = name
         self.password = generate_password_hash(password)
         self.admin = admin
 
-    id: Mapped[int] = mapped_column(primary_key=True)
-    name: Mapped[str] = mapped_column(String(), unique=True, nullable=False)
-    password: Mapped[str] = mapped_column(String())
-    admin: Mapped[bool] = mapped_column(Boolean(), default="false")
+    def _asdict(self):
+        _pre = asdict(self)
+        _pre["password"] = "dummy"
+        return _pre
+
+    def check_password(self, password):
+        return check_password_hash(self.password, password)
 
 
-@dataclass
+@ dataclass
 class Image(db.Model):
     __tablename__ = "pygallery2"
 
@@ -78,7 +87,7 @@ class Image(db.Model):
         _dict["time"] = _dict["time"].isoformat()
         return _dict
 
-    @classmethod
+    @ classmethod
     def from_s3_obj(cls, s3_config, bucket, key, geolocator_agent, album=None):
         print("Image: {0}...".format(key))
         if album is None:

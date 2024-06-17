@@ -1,12 +1,10 @@
-from sqlalchemy import column, text
 from flask import (Flask, abort, flash, redirect, render_template, request,
-                   session, url_for)
+                   session, url_for, jsonify)
 from celery import Celery
-import s3_pygallery.s3
-from werkzeug.security import generate_password_hash, check_password_hash
-from s3_pygallery.core import Base, Image, db
-from s3_pygallery.handle_request import main as handle_request
-
+from s3_pygallery.core import Image, User, db
+from s3_pygallery.main import create_main_blueprint
+from s3_pygallery.admin import create_admin_blueprint
+from s3_pygallery.api import create_api_blueprint
 # used to create overviews
 overview_entries = ["album", "village", "town", "county",
                     "state", "country", "date", "before", "after"]
@@ -17,104 +15,33 @@ def create_app(config=None):
 
     if config is None:
         app.config.from_pyfile("config.py", silent=False)
+    title = app.config.get("APP_TITLE")
     s3_config = app.config.get("S3_BACKEND")
     target_bucket = app.config.get("BUCKET")
-    title = app.config.get("APP_TITLE")
     db.init_app(app)
     with app.app_context():
         db.create_all()
 
+    main = create_main_blueprint(
+        title, s3_config=s3_config, target_bucket=target_bucket)
+    api = create_api_blueprint()
+    admin = create_admin_blueprint()
+
+    app.register_blueprint(main)
+    app.register_blueprint(api)
+    app.register_blueprint(admin)
+
     @ app.route("/")
     def default_view():
-        return redirect(url_for("gallery"))
+        return redirect(url_for("main.gallery"))
 
-    @ app.route("/gallery")
-    def gallery():
-        if not session.get("logged_in"):
-            return redirect(url_for("login"))
-        else:
-            if request.args:
-                gallery_search = request.args.copy()
-                shouldRedirect = False
-                for k, v in request.args.items():
-                    if v == "":
-                        shouldRedirect = True
-                        gallery_search[k] = None
-                if shouldRedirect:
-                    return redirect(url_for("gallery", **gallery_search))
-                else:
-                    images = handle_request(db, gallery_search)
-                    return render_template("gallery.html",
-                                           title=title,
-                                           body=[i._gen_frontend(s3_config, target_bucket)
-                                                 for i in list(images)])
-            else:
-                body = {}
-                for entry in overview_entries:
-                    if entry not in ["before", "after"]:
-                        body[entry] = db.session.execute(
-                            db.select(getattr(Image, entry)).distinct()).scalars()
-                    else:
-                        body[entry] = db.session.execute(
-                            db.select(getattr(Image, "date")).distinct()).scalars()
-                return render_template("overview.html",
-                                       body=body, title=title,
-                                       image_number=db.session.query(Image).count())
-
-    @ app.route("/metadata")
-    def metadata():
-        if not session.get("logged_in"):
-            return redirect(url_for("login"))
-        else:
-            if not request.args:
-                return redirect(url_for("default_view"))
-            else:
-                for k, v in request.args.items():
-                    image = db.session.execute(db.select(Image).where(
-                        getattr(Image, k) == int(v))).scalar_one()
-                    return render_template("metadata.html", title=title, frontend=image._gen_frontend(s3_config, target_bucket), metadata=image._asdict())
-
-    @ app.route("/login", methods=['GET', 'POST'])
-    def login():
-        if request.method == "GET":
-            return render_template("login.html", title=title)
-
-        if request.method == "POST":
-            user = request.form["name"]
-            password = request.form["password"]
-            if s3.check_access(s3_config, target_bucket, user, password) is True:
-                session["logged_in"] = True
-                return redirect(url_for("default_view"))
-            else:
-                flash("Authentication failed.")
-
-    @app.route("/api/users")
-    def show_users():
-        return render_template("users.html", body=db.session.execute(db.select(User.id, User.name, User.admin)).scalars())
-
-    @app.route("/api/gallery")
-    def gallery_api():
-        if request.args.get("access_key") is None or request.args.get("secret_key") is None:
-            abort(403)
-        if not s3.check_access(s3_config, target_bucket, request.args.get("access_key"), request.args.get("secret_key")):
-            abort(403)
-        else:
-            query = {k: v for (k, v) in request.args.items()
-                     if k in overview_entries}
-            if not query:
-                abort(404)
-            else:
-                images = handle_request(db, query)
-                return [i._json_prepare() for i in images]
-
-    @app.route("/api/update_db", methods=["POST"])
-    def request_update_db():
+    @app.route("/task/update_db", methods=["POST"])
+    def start_db_update():
         if app.config.get("UPDATE_DB_TRUSTED_IP") is not None and request.remote_addr not in app.config.get("UPDATE_DB_TRUSTED_IP"):
             abort(403)
         else:
             update_db.delay()
-            flash("The database is being updated in background")
-            return redirect(url_for("default_view"))
+            return jsonify("Ok. The database is being updated in the background"), 200
 
     return app
 
@@ -138,7 +65,7 @@ app = create_app()
 celery = create_celery(app)
 
 
-@celery.task
+@ celery.task
 def update_db():
     s3_config = app.config.get("S3_BACKEND")
     target_bucket = app.config.get("BUCKET")
