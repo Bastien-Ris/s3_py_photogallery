@@ -4,13 +4,13 @@ from flask import (Flask, Blueprint, abort, flash, redirect, render_template, re
 from celery import Celery
 import s3_pygallery.s3
 from werkzeug.security import generate_password_hash, check_password_hash
-from s3_pygallery.core import Image, User, db
+from s3_pygallery.core import Image, User, db, valid_keys, handle_request
 from s3_pygallery.handle_request import main as handle_request
 
 valid_keys = dir(Image) + ["after", "before", "time_after", "time_before"]
 
 
-def create_api_blueprint():
+def create_api_blueprint(app):
     api = Blueprint("api", __name__, url_prefix="/api")
 
     @api.route("/gallery")

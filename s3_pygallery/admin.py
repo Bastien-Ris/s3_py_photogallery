@@ -10,7 +10,7 @@ from s3_pygallery.handle_request import main as handle_request
 valid_keys = dir(Image) + ["after", "before", "time_after", "time_before"]
 
 
-def create_admin_blueprint():
+def create_admin_blueprint(app):
     admin = Blueprint("admin", __name__, url_prefix="/admin")
 
     @admin.route("/")

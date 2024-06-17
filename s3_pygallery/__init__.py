@@ -5,9 +5,6 @@ from s3_pygallery.core import Image, User, db
 from s3_pygallery.main import create_main_blueprint
 from s3_pygallery.admin import create_admin_blueprint
 from s3_pygallery.api import create_api_blueprint
-# used to create overviews
-overview_entries = ["album", "village", "town", "county",
-                    "state", "country", "date", "before", "after"]
 
 
 def create_app(config=None):
@@ -15,17 +12,13 @@ def create_app(config=None):
 
     if config is None:
         app.config.from_pyfile("config.py", silent=False)
-    title = app.config.get("APP_TITLE")
-    s3_config = app.config.get("S3_BACKEND")
-    target_bucket = app.config.get("BUCKET")
     db.init_app(app)
     with app.app_context():
         db.create_all()
 
-    main = create_main_blueprint(
-        title, s3_config=s3_config, target_bucket=target_bucket)
-    api = create_api_blueprint()
-    admin = create_admin_blueprint()
+    main = create_main_blueprint(app)
+    api = create_api_blueprint(app)
+    admin = create_admin_blueprint(app)
 
     app.register_blueprint(main)
     app.register_blueprint(api)

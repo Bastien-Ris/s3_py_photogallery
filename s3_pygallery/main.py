@@ -1,14 +1,16 @@
 from sqlalchemy import column, text
-from flask import Blueprint, session, request, render_template
-from s3_pygallery.core import Image, User, db
-from s3_pygallery.handle_request import main as handle_request
+from flask import Blueprint, session, request, render_template, redirect, url_for
+from s3_pygallery.core import Image, User, db, valid_keys, handle_request
 
 
 overview_entries = ["album", "village", "town", "county",
                     "state", "country", "date", "before", "after"]
 
 
-def create_main_blueprint(app_title, s3_config, target_bucket):
+def create_main_blueprint(app):
+    title = app.config.get("APP_TITLE")
+    s3_config = app.config.get("S3_BACKEND")
+    target_bucket = app.config.get("BUCKET")
     main = Blueprint("main", __name__)
 
     @ main.route("/gallery")
@@ -24,11 +26,11 @@ def create_main_blueprint(app_title, s3_config, target_bucket):
                         shouldRedirect = True
                         gallery_search[k] = None
                 if shouldRedirect:
-                    return redirect(url_for("gallery", **gallery_search))
+                    return redirect(url_for("main.gallery", **gallery_search))
                 else:
                     images = handle_request(db, gallery_search)
                     return render_template("gallery.html",
-                                           title=app_title,
+                                           title=title,
                                            body=[i._gen_frontend(s3_config, target_bucket)
                                                  for i in list(images)])
             else:
@@ -41,7 +43,7 @@ def create_main_blueprint(app_title, s3_config, target_bucket):
                         body[entry] = db.session.execute(
                             db.select(getattr(Image, "date")).distinct()).scalars()
                 return render_template("overview.html",
-                                       body=body, title=app_title,
+                                       body=body, title=title,
                                        image_number=db.session.query(Image).count())
 
     @ main.route("/metadata")
@@ -55,12 +57,12 @@ def create_main_blueprint(app_title, s3_config, target_bucket):
                 for k, v in request.args.items():
                     image = db.session.execute(db.select(Image).where(
                         getattr(Image, k) == int(v))).scalar_one()
-                    return render_template("metadata.html", title=app_title, frontend=image._gen_frontend(s3_config, target_bucket), metadata=image._asdict())
+                    return render_template("metadata.html", title=title, frontend=image._gen_frontend(s3_config, target_bucket), metadata=image._asdict())
 
     @main.route("/login", methods=['GET', 'POST'])
     def login():
         if request.method == "GET":
-            return render_template("login.html", title=app_title)
+            return render_template("login.html", title=title)
 
         if request.method == "POST":
             if request.form.items() is not None:
