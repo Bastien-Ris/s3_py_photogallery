@@ -2,18 +2,6 @@ import boto3
 from botocore import exceptions
 
 
-def check_access(config, bucket, user, password):
-    config["aws_access_key_id"] = user
-    config["aws_secret_access_key"] = password
-    try:
-        s3 = boto3.client("s3", **config)
-        s3.list_objects_v2(Bucket=bucket)
-        return True
-    except exceptions.ClientError as e:
-        print(e)
-        return False
-
-
 def internal_access(config):
     try:
         s3 = boto3.client(
@@ -54,3 +42,15 @@ def gen_temporary_url(config, bucket, obj, expire):
     except exceptions.ClientError as e:
         print(e)
         return
+
+
+def check_access(config, bucket, user, password):
+    config["aws_access_key_id"] = user
+    config["aws_secret_access_key"] = password
+    try:
+        s3 = boto3.client("s3", **config)
+        s3.list_objects_v2(Bucket=bucket)
+        return True
+    except exceptions.ClientError as e:
+        print(e)
+        return False

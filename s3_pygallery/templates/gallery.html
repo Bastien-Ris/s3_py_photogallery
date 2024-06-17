@@ -4,9 +4,9 @@
   <title>{{title}}</title>
 <link rel="shortcut icon" href="/static/logo.svg">
 <link rel="stylesheet" href="/static/style.css">
-<script src="/static/jquery.min.js" type="text/javascript"></script>
-<script type="module">
-import PhotoSwipeLightbox from '/static/photoswipe/dist/photoswipe-lightbox.esm.js';
+<script src="/static/node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script type="module" type="text/javascript">
+import PhotoSwipeLightbox from '/static/node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
 
 const lightbox = new PhotoSwipeLightbox({
   gallery: '#gallery--test',
@@ -14,49 +14,56 @@ const lightbox = new PhotoSwipeLightbox({
 
   initialZoomLevel: "fit",
   maxZoomLevel: 1,  
-  pswpModule: () => import('/static/photoswipe/dist/photoswipe.esm.js')
+  pswpModule: () => import('/static/node_modules/photoswipe/dist/photoswipe.esm.js')
 });
 
 lightbox.init();
 </script>
 </head>
 <body>
-  <h1>{{title}}<br>
-<a href="{{url_for('default_view')}}">&#8610</a>
-{% for k,v in request.args.items() %}
-{{k}}: {{v}}
-{% endfor %}
-  </h1>
-<div class="container" id="main-container">
-<div class="pswp-gallery" id="gallery--test">
-{% for item in body  %}
-{% if item.get("display_width") > item.get("display_height"): %}
-{%     set ratio = item.get("display_height") / item.get("display_width") %}
-{%     set thumb_height = 40*ratio %}
-{%     set thumb_width= 40 %}
-{%   else %}
-{%     set ratio = item.get("display_width") / item.get("display_height") %}
-{%     set thumb_height = 40 / 2 %}
-{%     set thumb_width = 40*ratio/2 %}
-{% endif %}
+  <h1>{{title}}<br><a href="{{url_for('default_view')}}">&#8610</a></h1>
+  <div class="container" id="main-container">
+  {% for k,v in request.args.items() %}
+  {% if request.args.get(k) %}
+  <p>{{k}}: {{v}}</p>
+  {% endif %}
+  {% endfor %}
+
+  {% if body %}
+  <div class="pswp-gallery" id="gallery--test">
+  {% for item in body  %}
+  {% if item.get("display_width") > item.get("display_height"): %}
+  {%     set ratio = item.get("display_height") / item.get("display_width") %}
+  {%     set thumb_height = 40*ratio %}
+  {%     set thumb_width= 40 %}
+  {%   else %}
+  {%     set ratio = item.get("display_width") / item.get("display_height") %}
+  {%     set thumb_height = 40 / 2 %}
+  {%     set thumb_width = 40*ratio/2 %}
+  {% endif %}
   <a href='{{item.get("url")}}'
     data-pswp-width="{{item.get('display_width')}}"
     data-pswp-height="{{item.get('display_height')}}"
     data-cropped="true"
     target="_blank">
-  <img class="gallery-img" id="{{item.get('image_id')}}" width="{{thumb_width}}%" height="{{thumb_height}}%" src='{{item.get("url")}}' />
+    <img class="gallery-img" id="{{item.get('image_id')}}" width="{{thumb_width}}%" height="{{thumb_height}}%" src='{{item.get("url")}}' />
   </a>
-{% endfor %}
-</div>
-</div>
-<div class="bottombar">
-    <p>Metadata:</p>
+  {% endfor %}
+  </div>
+  {% else %}
+  <p>It seems there is no matching image.</p>
+  {% endif %}
+  </div>
+
+  <div class="bottombar">
+    <p>view/edit metadata:</p>
     {% for item in body %}
     <a class="link" href="/metadata?id={{item.get("image_id")}}">{{item.get("image_id")}}</a>
     {% endfor %}
-</div>
-<script>
-  $(".gallery").hover(
+  </div>
+
+  <script>
+  $(".gallery-img").hover(
       function()
       {
         popup = $('<div class="popup"><p>Image id:'+$(this).attr("id")+'</p></div>').insertAfter(this);
@@ -66,6 +73,6 @@ lightbox.init();
         popup.remove();
       }
   );
-</script>
+  </script>
 </body>
 </html>

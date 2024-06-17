@@ -1,0 +1,1843 @@
+
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 11:49:23
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x741386611ae0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 11:50:11
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7ed71f1fdba0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 11:51:53
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d95fcf09bd0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 12:02:18
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7df725111ae0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 12:55:12
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7f916e5f9b10
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:10:28
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x73bd3d915b10
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:11:33
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x708032915ae0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:12:50
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x746e19a01ae0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:17:50
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x716a1bf15ae0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:24:29
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x76461e0f9b10
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:29:21
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x79219a2f9b70
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:29:37
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x76d104a0db70
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:31:25
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x732bd7811b70
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:32:10
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x773326705b70
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:32:45
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7de81de01c30
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 13:33:07
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7ba816ffdb70
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:04:43
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7500fa73ecb0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:05:55
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7b1fd6a5ecb0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:06:19
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x77c757b52e00
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:06:33
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7cbe91546cb0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:06:58
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7655b4512e00
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:07:10
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x755a3833acb0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:07:55
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7af167662cb0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:09:03
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d4218a62cb0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:09:56
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x719941956cb0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:12:40
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7dbc07952c80
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:13:38
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x72be29266dd0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:13:54
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7f5aab952c80
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:15:22
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7cd8fc746c80
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:18:54
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x709f68eeec80
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:19:24
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x74ab69152c80
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:28:34
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x791b013fe710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:30:14
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x701610d02710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:30:43
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7bd308402710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:31:02
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7871b0a02710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:31:21
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x74114570e710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:31:41
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d5d322f2710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:32:05
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7032f8802710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:33:09
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7314d38fa890
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:33:21
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x71ed525f6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:33:52
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x78b8666fa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:35:23
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7c8e46906710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:38:02
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x75ed1c30e710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:39:27
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7010b30fe710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:39:52
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7a4fe9d06710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:40:54
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7dc227e0a710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:42:04
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x6ffdf25fa890
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:42:12
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x79d37c0fa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:42:55
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x70be8710a830
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:43:03
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7600d230e710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:43:21
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x758016f12710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:47:17
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d2994806710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:47:36
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7a11100fa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:49:59
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x76fe886fa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:50:59
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7499cc6f2890
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:51:23
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x76e2e56fa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:52:24
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7839342f6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:53:36
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7743f27f6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:53:55
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x73d8ba7fa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 14:55:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7e9d9c112710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:02:23
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7bd0c15fe710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:03:25
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x75a3d8612710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:04:46
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d6e4e3f6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:15:12
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d4260bfa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:16:27
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x79a4be60e710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:17:08
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7ad22db0e710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:21:41
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x72bbb74f6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:24:21
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7025a3312710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:24:52
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7ac51ba0e710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:45:08
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7c15cb7fe890
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:46:47
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x77b2ca812890
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:52:44
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x758b36cf6890
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:54:13
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x72b1ecb028f0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-14 15:55:46
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7dcbcd2f68f0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+Restarting celery worker (/home/bastien/Dev/python/s3_pygallery/.venv/bin/celery -A s3_pygallery:celery worker)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:01:03
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7c850e3fbd60
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:03:32
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x757d1e1e39d0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:04:07
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x78e867de39d0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:04:34
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7caaef9ded40
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:04:44
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7395071f79d0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:06:18
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7b5a6ebe79d0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:12:36
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7884829e39d0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 11:31:49
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x746f4b2f29b0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:21:09
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7a42e54b9e40
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:24:42
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d98d9abded0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:31:57
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x73782bff6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:54:26
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7a50391f2710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:55:18
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7779fb4e6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:56:20
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x730bc98f6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:58:04
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7948f4cf6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 13:58:14
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x70a3999ee710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 14:03:03
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7d1511df6710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 14:03:24
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x70d8553fa710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 14:03:41
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7baa83eea710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 14:04:48
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x72960ddea710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 14:04:58
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7989cb3ee710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 17:58:12
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7b335b168a90
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 17:58:26
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x768248258ac0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 18:00:06
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x70134645cac0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 18:02:22
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x74640885cac0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 18:03:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x7b5c6f26cac0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 18:04:19
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x70fa52e70ac0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)
+[1;36m 
+ -------------- celery@NB-br33xiqa v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.5.0-35-generic-x86_64-with-glibc2.35 2024-06-16 18:06:41
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         s3_pygallery:0x74d555fde710
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+
+worker: Warm shutdown (MainProcess)

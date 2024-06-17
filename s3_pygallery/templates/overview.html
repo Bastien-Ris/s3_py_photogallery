@@ -1,19 +1,37 @@
+<!DOCTYPE html>
 <head>
-</style>
-</head>
 <title>{{title}}</title>
 <link rel="shortcut icon" href="/static/logo.svg">
 <link rel="stylesheet" href="/static/style.css">
+<script src="/static/node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+</head>
 <body>
   <h1>{{title}}<br> Overview</h1>
-{% for key, v in body.items() %}
-<div class="container" width=80% height=80%>
-<h2>{{key}}</h2>
-{% for distinct in v %}
-<a href="/gallery?{{key}}={{distinct}}">{{distinct}}</a>
-{% endfor %}
+<div class="container">
+  <h1>Search: </h1>
+  <form action="gallery" id="search-gallery" class="search-gallery">
+  <center><table>
+  {% for key, v in body.items() %}
+  <tr><th>
+  <label for={{key}}>{{key}}</label>
+    </th><th>
+  <select name={{key}} id={{key}}>
+  <option value="" selected="selected"></option>
+  {% for distinct in v %}
+  <option value="{{distinct}}">{{distinct}}</option>
+  {% endfor %}
+  </select>
+    </th></tr>
+  {% endfor %}
+    </table></center>
+  <br>
+  <input value="show" type="submit" />
+  </form>
 </div>
-<br>
-{% endfor %}
-
+<div class="bottombar">
+  <center>
+  <p>Number of images: {{image_number}}</p>
+  <form method="post" action="/api/update_db"><input value="Update Database" type="submit" /></form>
+  </center>
+</div>
 </body>

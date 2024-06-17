@@ -9,21 +9,11 @@
     <a href="javascript:window.history.back();">&#8610</a>
     Metadata: {{metadata.get("id")}}</h1>
 <div class="form" width=80% height=80%>
-  <br><img src={{frontend.get("url")}} style="margin:auto;max-width:25%;max-height:25%;"><br>
-<form accept-charset="UTF-8" class="metadata" action="/metadata?id={{metadata.get('id')}}" method="post">
-<table>
+  <br><img src={{frontend.get("url")}} style="margin:auto;max-width:25%;max-height:25%;"><br> 
+  <center><table>
   {% for key, value in metadata.items() %}
-  {%  if key in ["id", "key"] %}
-  <tr><th><label for="{{key}}">{{key}}</label></th>
-  <th>{{value}}</th></tr>
-  {%  else %}
-  <tr><th><label for="{{key}}">{{key}}</label></th>
-  <th> <input name="{{key}}" id="{{key}}" type="text" value="{{value}}"></input></th></tr>
-  {% endif %}
+  <tr><th>{{key}}</th><th>{{value}}</th></tr>
   {% endfor %}
-</table>
-<br>
-<input value="update metadata" type="submit" />
-</form>
+    </table></center>
 </div>
 </body>

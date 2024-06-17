@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+</style>
+</head>
+<link rel="shortcut icon" href="/static/logo.svg">
+<link rel="stylesheet" href="/static/global.css">
+<body>
+<h1>Forestnest Photo Gallery: users</h1>
+<div class="form" width=80% height=80%>
+<form accept-charset="UTF-8" class="metadata" action="/api/users" method="post">
+<table>
+  <tr><th>Name:</th><th>Password</th><th>Admin?</th></tr>
+{% for item in body %}
+<tr>
+{% for key, value in item.items() %}
+{% if key == "passwords" %}
+<th> <input name="{{key}}" id="{{key}}" type="password" value="{{value}}"></input></th>
+{% elif key == "admin" %}
+<th> <input name="{{key}}" id="{{key}}" type="checkbox" value="{{value}}"></input></th>
+{% else %}
+<th> <input name="{{key}}" id="{{key}}" type="text" value="{{value}}"></input></th>
+{% endif %}
+{% endfor %}
+<th> <input type="submit" /></th>
+</tr>
+{% endfor %}
+<tr> Create new user </tr>
+<tr>
+  <th> <input name="name" id="name" type="text"><label for="name"></label></input></th>
+  <th> <input name="password" id="password" type="password"><label for="name"></label></input></th>
+  <th> <input name="admin" id="admin" type="checkbox"><label for="admin"></label></input></th>
+  <th> <input type="submit" /></th>
+  </tr>
+</table>
+<br>
+</form>
+</div>
+</body>
