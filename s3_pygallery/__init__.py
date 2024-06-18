@@ -1,7 +1,7 @@
 from flask import (Flask, abort, flash, redirect, render_template, request,
                    session, url_for, jsonify)
 from celery import Celery
-from s3_pygallery.core import Image, User, db
+from s3_pygallery.core import db
 from s3_pygallery.main import create_main_blueprint
 from s3_pygallery.admin import create_admin_blueprint
 from s3_pygallery.api import create_api_blueprint

@@ -1,6 +1,6 @@
 from sqlalchemy import column, text
 from flask import Blueprint, session, request, render_template, redirect, url_for
-from s3_pygallery.core import Image, User, db, valid_keys, handle_request
+from s3_pygallery.core import S3Client, Image, User, db, valid_keys, handle_request
 
 
 overview_entries = ["album", "village", "town", "county",
@@ -8,15 +8,15 @@ overview_entries = ["album", "village", "town", "county",
 
 
 def create_main_blueprint(app):
+    s3_client = S3Client(app.config.get("S3_BACKEND"))
     title = app.config.get("APP_TITLE")
-    s3_config = app.config.get("S3_BACKEND")
     target_bucket = app.config.get("BUCKET")
     main = Blueprint("main", __name__)
 
     @ main.route("/gallery")
     def gallery():
         if not session.get("logged_in"):
-            return redirect(url_for("login"))
+            return redirect(url_for("main.login"))
         else:
             if request.args:
                 gallery_search = request.args.copy()
@@ -31,7 +31,7 @@ def create_main_blueprint(app):
                     images = handle_request(db, gallery_search)
                     return render_template("gallery.html",
                                            title=title,
-                                           body=[i._gen_frontend(s3_config, target_bucket)
+                                           body=[i._gen_frontend(s3_client, target_bucket)
                                                  for i in list(images)])
             else:
                 body = {}
@@ -49,7 +49,7 @@ def create_main_blueprint(app):
     @ main.route("/metadata")
     def metadata():
         if not session.get("logged_in"):
-            return redirect(url_for("login"))
+            return redirect(url_for("main.login"))
         else:
             if not request.args:
                 return redirect(url_for("default_view"))
@@ -57,7 +57,7 @@ def create_main_blueprint(app):
                 for k, v in request.args.items():
                     image = db.session.execute(db.select(Image).where(
                         getattr(Image, k) == int(v))).scalar_one()
-                    return render_template("metadata.html", title=title, frontend=image._gen_frontend(s3_config, target_bucket), metadata=image._asdict())
+                    return render_template("metadata.html", title=title, frontend=image._gen_frontend(s3_client, target_bucket), metadata=image._asdict())
 
     @main.route("/login", methods=['GET', 'POST'])
     def login():

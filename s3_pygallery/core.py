@@ -1,22 +1,83 @@
-from flask import render_template, abort
 from datetime import date, time
-from functools import partial
-from s3_pygallery.core import Image
 from dataclasses import asdict, dataclass
 from typing import List, Optional
 from datetime import datetime
 from io import BytesIO
 from urllib.request import urlopen
 from os import path
+import boto3
+from botocore import exceptions
 from PIL import Image as pil, ExifTags
 from geopy.geocoders import Nominatim
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
-from s3_pygallery.s3 import gen_temporary_url
 from sqlalchemy import (Date, ForeignKey, Integer, String, Boolean, Time, create_engine,
                         select, column)
 from sqlalchemy.orm import (DeclarativeBase, Mapped, Session, mapped_column,
                             relationship)
+
+# s3 core
+# botocore doesn't support class inheritance for Client.S3 object.
+# This class is a dictionary holding the config,
+# and supporting only methods required for this app.
+
+
+class S3Client(dict):
+    def __init__(self, config):
+        super(S3Client, self).__init__(
+            **config
+        )
+
+    def __str__(self):
+        return "S3Client: endpoint: {0}, access_key: {1}, secret_key: ***".format(
+            self.get("endpoint_url"), self.get("aws_access_key_id"))
+
+    def _build_client(self):
+        try:
+            s3 = boto3.client(
+                "s3",
+                **self
+            )
+            return s3
+        except exceptions.ClientError as e:
+            print("Fatal error: Connection to s3 failed.")
+            print("config:")
+            print(self.__str__())
+            return
+
+    def list_objects(self, bucket):
+        client = self._build_client()
+        try:
+            paginator = client.get_paginator("list_objects_v2")
+            pages = paginator.paginate(Bucket=bucket)
+            images_lst = []
+            for obj in pages:
+                content = obj["Contents"]
+
+                for obj in content:
+                    key = obj.get("Key")
+                    metadata = client.head_object(Bucket=bucket, Key=key)
+                    if metadata.get("ContentType") == "image/jpeg":
+                        images_lst.append(key)
+            return images_lst
+        except exceptions.PaginationError as e:
+            print(e)
+            return
+
+    def gen_temporary_url(self, bucket, obj, expire):
+        client = self._build_client()
+        try:
+            url = client.generate_presigned_url(
+                "get_object",
+                Params={"Bucket": bucket, "Key": obj},
+                ExpiresIn=expire,
+            )
+            return url
+        except exceptions.ClientError as e:
+            print(e)
+            return
+
+# SQL Core
 
 
 class Base(DeclarativeBase):
@@ -71,9 +132,9 @@ class Image(db.Model):
     country: Mapped[Optional[str]] = mapped_column(String())
     altitude: Mapped[Optional[int]] = mapped_column(Integer())
 
-    def _gen_frontend(self, s3_config, bucket, expire=3600):
-        _dict = {"image_id": self.id, "url": gen_temporary_url(
-            s3_config, bucket, self.key, expire)}
+    def _gen_frontend(self, s3client, bucket, expire=3600):
+        _dict = {"image_id": self.id, "url": s3client.gen_temporary_url(
+            bucket, self.key, expire)}
         if int(self.orientation) in [3, 5, 6, 7, 8]:
             _dict["display_height"] = self.width
             _dict["display_width"] = self.height
@@ -92,14 +153,14 @@ class Image(db.Model):
         return _dict
 
     @ classmethod
-    def from_s3_obj(cls, s3_config, bucket, key, geolocator_agent, album=None):
+    def from_s3_obj(cls, s3client, bucket, key, geolocator_agent, album=None):
         print("Image: {0}...".format(key))
         if album is None:
             dirname, filename = path.split(key)
             album = dirname.replace("/", "_")
 
         _meta = {"key": key, "album": album}
-        fd = urlopen(gen_temporary_url(s3_config, bucket, key, expire=60))
+        fd = urlopen(s3client.gen_temporary_url(bucket, key, expire=60))
         obj = BytesIO(fd.read())
 
         pil_info = pil.open(obj)
@@ -162,6 +223,8 @@ class Image(db.Model):
 
         return Image(**_meta)
 
+# Functions helper
+
 
 special_keys = ["before", "after", "time_before", "time_after"]
 valid_keys = dir(Image) + special_keys
@@ -171,7 +234,7 @@ def query_stmt(k, v):
     return lambda Image: getattr(Image, k) == v
 
 
-def main(db, request):
+def handle_request(db, request):
     stmts = []
     for k, v in request.items():
         if k in valid_keys and request.get(k) != "":
